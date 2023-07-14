@@ -40,7 +40,7 @@ const { Records } = event;
 
 
         await page.setViewport({ width: 1000, height: 1000 });
-        await page.goto('https://staging.rupee.com.br/users/sign_in', {waitUntil: 'networkidle0'});
+        await page.goto('https://app.rupee.com.br/users/sign_in', {waitUntil: 'networkidle0'});
 
       } catch (error) {
         console.log(error);
