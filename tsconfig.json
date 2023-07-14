@@ -1,0 +1,25 @@
+{
+    "extends": "./tsconfig.paths.json",
+    "compilerOptions": {
+      "lib": ["ESNext","DOM"],
+      "moduleResolution": "node",
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "removeComments": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "target": "ES2021",
+      "forceConsistentCasingInFileNames": true,
+      "allowJs": true,
+      "resolveJsonModule": true,
+      "strictNullChecks": true,
+      "types": ["node"],
+      "outDir": "./dist"
+    },
+    "include": [
+      "src/*.ts"
+    ],
+    "ts-node": {
+      "require": ["tsconfig-paths/register"]
+    }
+  }
